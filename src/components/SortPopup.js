@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const SortPopup = React.memo(function SortPopup({items, activeSortType, onClickSortType}) {
     const [visiblePopup, setVisiblePopup] = React.useState(false);
-    const [activeItem, setActiveItem] = React.useState(0);
     const sortRef = React.useRef();
     const activeLabel = items.find(obj => obj.type === activeSortType).name;
 
