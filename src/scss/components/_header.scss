@@ -1,8 +1,8 @@
 @import '../variables';
 
 .header {
-  border-bottom: 1px solid $gray-line;
-  padding: 40px 0;
+  border-bottom: .05vw solid $gray-line;
+  padding: 2vw 0;
 
   .container {
     display: flex;
@@ -14,18 +14,19 @@
     display: flex;
 
     img {
-      margin-right: 15px;
+      width: 2vw;
+      margin-right: .7vw;
     }
 
     h1 {
       color: #181818;
-      font-size: 24px;
-      letter-spacing: 1%;
+      font-size: 1.25vw;
       text-transform: uppercase;
       font-weight: 800;
     }
 
     p {
+      font-size: 1vw;
       color: #7b7b7b;
     }
   }

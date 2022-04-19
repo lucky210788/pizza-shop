@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes, {number} from 'prop-types';
 import classNames from "classnames";
-import {Button} from "../index";
+import Button from "../UI/button/Button";
 
 function Index({addedCount, id, name, imageUrl, price, types, sizes, onClickAddPizza}) {
     const availableTypes = ['тонкое', 'традиционное'];
@@ -68,8 +68,8 @@ function Index({addedCount, id, name, imageUrl, price, types, sizes, onClickAddP
                 <div className="pizza-block__price">от {price} ₽</div>
                 <Button className="button--add" onClick={onAddPizza} outline>
                     <svg
-                        width="12"
-                        height="12"
+                        // width="12"
+                        // height="12"
                         viewBox="0 0 12 12"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ function Index({addedCount, id, name, imageUrl, price, types, sizes, onClickAddP
                         />
                     </svg>
                     <span>Добавить</span>
-                    <i>{addedCount ? addedCount : 0}</i>
+                    <div><p>{addedCount ? addedCount : 0}</p></div>
                 </Button>
             </div>
         </div>

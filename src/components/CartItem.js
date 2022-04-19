@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from "./index";
+import Button from "./UI/button/Button";
 
 function CartItem({onAddOne, onRemoveOne, onRemove, id, name, type, size, img, totalPrice, count}) {
 
